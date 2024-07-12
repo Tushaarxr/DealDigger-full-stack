@@ -39,12 +39,6 @@ Sends product alert emails for various scenarios, such as back-in-stock alerts o
 ### 👉 Automated Cron Jobs
 Utilizes cron jobs to automate periodic scraping, ensuring data is always up-to-date.
 
-### And many more...
-Including efficient code architecture and reusability, Deal Digger is designed to be both robust and maintainable.
-
-## Community
-
-Join our [Discord community](#) to get help, share feedback, and connect with other users. Our community is active and ready to assist you with any issues you might face.
 
 ## Installation and Setup
 
@@ -80,11 +74,3 @@ Join our [Discord community](#) to get help, share feedback, and connect with ot
     npm run build
     npm start
     ```
-
-## Contributing
-
-We welcome contributions to improve Deal Digger! Please read our [contributing guidelines](CONTRIBUTING.md) before submitting a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
