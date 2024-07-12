@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Deal Digger
+
+Deal Digger is an advanced e-commerce product scraping site designed to assist users in making informed purchasing decisions. Developed using Next.js and Bright Data's webunlocker, it notifies users when a product drops in price and helps competitors by alerting them when the product is out of stock, all managed through cron jobs.
 
 ## Getting Started
 
-First, run the development server:
+If you're just getting started or face any bugs, join our active Discord community with over 27k+ members. It's a place where people help each other out.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ⚙️ Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**: Framework for building server-side rendered React applications.
+- **Bright Data**: Web scraping and unlocking service.
+- **Cheerio**: Fast, flexible, and lean implementation of core jQuery designed specifically for the server.
+- **Nodemailer**: Module for Node.js applications to send emails.
+- **MongoDB**: NoSQL database for storing product data.
+- **Headless UI**: Unstyled, fully accessible UI components for Tailwind CSS.
+- **Tailwind CSS**: Utility-first CSS framework for rapidly building custom user interfaces.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔋 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 👉 Header with Carousel
+A visually appealing header with a carousel showcasing key features and benefits of Deal Digger.
 
-## Learn More
+### 👉 Product Scraping
+A search bar allowing users to input Amazon product links for scraping. The tool fetches product data for user analysis.
 
-To learn more about Next.js, take a look at the following resources:
+### 👉 Scraped Projects
+Displays the details of products scraped so far, offering insights into tracked items and their status.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 👉 Scraped Product Details
+Showcases the product image, title, pricing, details, and other relevant information scraped from the original website.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 👉 Track Option
+A modal for users to provide email addresses and opt-in for tracking specific products.
 
-## Deploy on Vercel
+### 👉 Email Notifications
+Sends product alert emails for various scenarios, such as back-in-stock alerts or lowest price notifications.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 👉 Automated Cron Jobs
+Utilizes cron jobs to automate periodic scraping, ensuring data is always up-to-date.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### And many more...
+Including efficient code architecture and reusability, Deal Digger is designed to be both robust and maintainable.
+
+## Community
+
+Join our [Discord community](#) to get help, share feedback, and connect with other users. Our community is active and ready to assist you with any issues you might face.
+
+## Installation and Setup
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/deal-digger.git
+    cd deal-digger
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Set up environment variables:
+    Create a `.env` file in the root directory and add your environment variables. Example:
+    ```env
+    NEXT_PUBLIC_API_KEY=your_api_key
+    MONGODB_URI=your_mongodb_uri
+    EMAIL_HOST=smtp.your-email-provider.com
+    EMAIL_PORT=587
+    EMAIL_USER=your_email@example.com
+    EMAIL_PASS=your_email_password
+    ```
+
+4. Run the development server:
+    ```bash
+    npm run dev
+    ```
+
+5. Build the application for production:
+    ```bash
+    npm run build
+    npm start
+    ```
+
+## Contributing
+
+We welcome contributions to improve Deal Digger! Please read our [contributing guidelines](CONTRIBUTING.md) before submitting a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
