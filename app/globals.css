@@ -17,7 +17,7 @@
 
 @layer utilities {
   .btn {
-    @apply py-4 px-4 bg-secondary hover:bg-opacity-70 rounded-[30px] text-white text-lg font-semibold;
+    @apply py-4 px-4 border-green-800 bg-green-600 hover:bg-opacity-70 rounded-[30px] text-white text-lg font-bold;
   }
 
   .head-text {
@@ -29,7 +29,7 @@
   }
 
   .small-text {
-    @apply flex gap-2 text-sm font-medium text-primary;
+    @apply flex gap-2 text-sm font-medium text-green-500;
   }
 
   .paragraph-text {
@@ -37,7 +37,7 @@
   }
 
   .hero-carousel {
-    @apply relative sm:px-10 py-5 sm:pt-20 pb-5 max-w-[560px] h-[700px] w-full bg-[#F2F4F7] rounded-[30px] sm:mx-auto;
+    @apply relative sm:px-10 py-5 sm:pt-20 pb-5 max-w-[560px] h-[700px] w-full bg-[rgb(156,255,156)] rounded-[30px] sm:mx-auto;
   }
 
   .carousel {
@@ -49,11 +49,11 @@
   }
 
   .carousel .control-dots .dot {
-    @apply w-[10px] h-[10px] bg-[#D9D9D9] rounded-full bottom-0 !important;
+    @apply w-[10px] h-[10px] bg-[#2f44ff] rounded-full bottom-0 !important;
   }
 
   .carousel .control-dots .dot.selected {
-    @apply bg-[#475467] !important;
+    @apply bg-[#ffffff] !important;
   }
 
   .trending-section {
@@ -91,7 +91,7 @@
   }
 
   .dialog-content {
-    @apply p-6  bg-white inline-block w-full max-w-md my-8 overflow-hidden text-left align-middle transition-all transform  shadow-xl rounded-2xl;
+    @apply p-6  bg-green-50 inline-block w-full max-w-md my-8 overflow-hidden text-left align-middle transition-all transform  shadow-xl rounded-2xl;
   }
 
   .dialog-head_text {
@@ -107,7 +107,7 @@
   }
 
   .dialog-btn {
-    @apply px-5 py-3 text-white text-base font-semibold border border-secondary bg-secondary rounded-lg mt-8;
+    @apply px-5 py-3 text-white text-base font-semibold border border-green-800 bg-green-600 rounded-lg mt-8;
   }
 
   /* NAVBAR */
@@ -121,7 +121,7 @@
 
   /* PRICE INFO */
   .price-info_card {
-    @apply flex-1 min-w-[200px] flex flex-col gap-2 border-l-[3px] rounded-10 bg-white-100 px-5 py-4;
+    @apply flex-1 min-w-[200px] flex flex-col gap-2 border-l-[3px] rounded-10 bg-green-100 px-5 py-4;
   }
 
   /* PRODUCT CARD */
@@ -143,10 +143,10 @@
 
   /* SEARCHBAR INPUT */
   .searchbar-input {
-    @apply flex-1 min-w-[200px] w-full p-3 border border-gray-300 rounded-lg shadow-xs text-base text-gray-500 focus:outline-none;
+    @apply flex-1 min-w-[200px] w-full p-3 border border-gray-300 rounded-lg shadow-xs text-base text-secondary focus:outline-none;
   }
 
   .searchbar-btn {
-    @apply bg-gray-900 border border-gray-900 rounded-lg shadow-xs px-5 py-3 text-white text-base font-semibold hover:opacity-90 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-40;
+    @apply border-green-800 bg-green-600 rounded-lg shadow-xs px-5 py-3 text-white text-base font-semibold hover:opacity-90 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-40;
   }
 }

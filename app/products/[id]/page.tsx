@@ -8,6 +8,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
+import ProductRecommendation from "@/components/ProductRecommendation";
+
 type Props = {
   params: { id: string }
 }
@@ -119,10 +121,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
                 </div>
               </div>
 
-              <p className="text-sm text-black opacity-50">
-                <span className="text-primary-green font-semibold">93% </span> of
-                buyers have recommeded this.
-              </p>
+             <ProductRecommendation/>
             </div>
           </div>
 
@@ -174,7 +173,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
             height={22}
           />
 
-          <Link href="/" className="text-base text-white">
+          <Link href={product.url} className="text-base text-white">
             Buy Now
           </Link>
         </button>
