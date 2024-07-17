@@ -8,9 +8,9 @@ const quicksand = Quicksand({ subsets: ["latin"],
  });
 
 export const metadata: Metadata = {
-  title: "Deal Digger - eCommerce Price Traker",
+  title: "Deal Digger - eCommerce Price Tracker",
   description:
-    "Welcome to LowestPriceFinder, the premier web scraping platform designed to help you find the best deals online! Our innovative website scours the internet to bring you the lowest prices for your desired products across multiple e-commerce websites. Whether you’re shopping for electronics, clothing, home goods, or any other product, LowestPriceFinder ensures you never overpay again.",
+    "Welcome to the premier web scraping platform designed to help you find the best deals online! Our innovative website scours the internet to bring you the lowest prices for your desired products across multiple e-commerce websites. Whether you’re shopping for electronics, clothing, home goods, or any other product, LowestPriceFinder ensures you never overpay again.",
 };
 
 export default function RootLayout({

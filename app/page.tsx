@@ -23,7 +23,7 @@ const Home = async () => {
             </p>
 
             <h1 className="head-text">
-              Your Personal Price Traker
+              Your Personal Price Tracker
               <span className="text-green-500"> DealDigger</span>
             </h1>
 
